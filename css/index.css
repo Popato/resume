@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+/* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+/* 自己写的样式 */
+
+/* 音乐 */   
+.music img{
+    width: 9%;
+    height: 5%;
+    position: absolute;
+    z-index: 10;
+    top: 3%;
+    left: 85%;
+    animation: musicchange 5s linear infinite;
+}
+
+/* 音乐动画 */
+@keyframes musicchange{
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* 第一屏 */
+ .swiper-slide:first-child{
+    background: url(../img/01.png);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.first-top{
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+
+.first-top p{
+    font-size: 12px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    margin-bottom: 3%;
+}
+
+.first-top div{
+    /* border-bottom: 2px solid white; */
+    width: 50%;
+    margin: 0 auto;
+    font-size: 28px;
+    margin-bottom: 3%;
+     
+}
+
+.first-top hr{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    height: 4px;
+    background: #693f74;
+    border: 0;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.first-top img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%; 
+    border: 3px solid #693f74;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.first-cen{
+    margin: 20% auto;
+    position: absolute;
+    width: 100%;
+}
+
+.first-cen p{
+    color: white;
+    margin: 6% auto;
+    font-size: 20px;
+}
+
+.first-cen p span{
+    display: inline-block;
+    margin-right: 4%; 
+    text-align: center;
+}
+
+.first-bot{
+    margin: 45% auto;
+    position: absolute;
+    background-image: url(../img/known-more.png);
+    background-size: 100%;
+    width: 300px;
+    height: 54px;
+    color: #693f74;
+    line-height: 54px;
+}
+
+.first-arrow img{
+    position: absolute;
+    left: 48%;
+    bottom: 4%;
+    animation: arrow 2s linear infinite;
+}  
+
+/* 箭头动画 */
+@keyframes arrow{
+    50%{
+        bottom: 8%;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 12%;
+        opacity: 0;
+    }
+}
+
+/* 第二屏 */
+.swiper-slide:nth-child(2){
+    background: url(../img/02.png);
+    background-size: cover;
+}
+
+.second-txt{
+    border: 6px double rgba(119,135,171,0.5);
+    background: rgba(174,184,192,0.7);
+    width: 85%;
+    height: 65%;
+    text-align: left;
+    color: white;
+}
+.second-txt h3{
+    border: 2px dashed #7787ab;
+    width: 35%;
+    text-align: center;
+    margin: 5% 3%;
+}
+.left{
+    text-align: center;
+}
+.second-pic{
+    width: 80px;
+    height: 110px;
+    margin-top: -110%; 
+    margin-left:70%;
+    border: 3px double #a8ada7;
+    box-shadow:2px 2px 2px #000; 
+}
+    
+.second-pic img{
+    width: 100%;
+    height: 100%;
+} 
+
+
+/* 第三屏 */
+ .swiper-slide:nth-child(3){
+    background: url(../img/03.png);
+    background-size: cover;
+}
+
+.three-top{
+    font-size: 28px;
+    background: rgba(110,178,153,0.8);
+    border-radius: 20%;
+    color: white;
+    width: 40%;
+    padding: 1% 0 1% 0;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 10%;
+}
+
+.three-cen{
+    width: 80%;
+    height: 8%;
+    margin-top:-8%; 
+
+}
+
+.three-cen img{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+}
+
+.three-cen p{
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+} 
+
+.one{
+     position: absolute;
+     top: 30%;
+}
+
+.two{
+    position: absolute;
+     top: 45%;
+}
+
+.third{
+    position: absolute;
+    top: 60%;
+}
+
+.fourth{
+    position: absolute;
+     top: 75%;
+}
+
+.fivth{
+    position: absolute;
+     top: 90%;
+}
+
+/* 第四屏 */
+.swiper-slide:nth-child(4){
+    background: url(../img/04.png);
+    background-size: cover;
+}
+
+
+.four-top{
+    color: white;
+    background: rgba(192,172,142,0.6);
+    border-radius: 20%;
+    width: 60%;
+    font-size: 28px;
+    padding: 1% 0 1% 0;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 10%;
+}
+
+.four-cen{
+    width: 90%;
+    height: 65%;
+    margin-top:5%; 
+}
+.swiper-slide:nth-child(4) .four-cen .post{
+    background: #d0c979;
+    border-radius: 5px;
+    width: 10px;
+    height: 100%;
+    margin: 3% auto;
+    display: none;
+}
+
+@keyframes post {
+    0%{
+        height: 0%;
+    }
+    20%{
+        height: 20%;
+    }
+    40%{
+        height: 40%;
+    }
+    60%{
+        height: 60%;
+    }
+    80%{
+        height: 80%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.round{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #f38712;
+
+}
+.round1{
+    position: absolute;
+    top: 30%;
+    left: 47.5%; 
+}
+.round2{
+    position: absolute;
+    top: 45%;
+    left: 47.5%; 
+}
+.round3{
+    position: absolute;
+    top: 60%;
+    left: 47.5%; 
+}
+.round4{
+    position: absolute;
+    top: 75%;
+    left: 47.5%; 
+}
+
+.place{
+    width:35%;
+    position: absolute;
+    left: 10%;
+    color: white;
+}
+.live{
+    width:35%;
+    position: absolute;
+    left: 56%;
+    text-align: left;
+    color: white;
+}
+.live1{
+    top: 30%;
+}
+.live2{
+    top: 45%;
+}
+.live3{
+    top: 60%;
+}
+.live4{
+    top: 75%;
+}
+.four-arrow img{
+    position: absolute;
+    bottom: 2%;
+    left: 48%;
+    animation: arrow 2s linear infinite;
+}
+
+/* 第五屏 */
+.swiper-slide:nth-child(5){
+    background: url(../img/bg5.jpg);
+    background-size: cover;
+}
+
+.five-top{
+    color: white;
+    background: rgba(5,28,60,0.6);
+    border-radius: 20%;
+    width: 60%;
+    font-size: 28px;
+    padding: 1% 0 1% 0;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 10%;
+}
+
+.five-txt{
+    color: white;
+    font-size: 20px;
+    width: 75%;
+    height: 50%;
+}
+.five-txt p{
+    margin: 15% auto;
+}
+
+.five-txt p span{
+    display: inline-block;
+    margin: auto 5%;
+}
+
+/* 第六屏 */
+.swiper-slide:nth-child(6){
+    background-size: cover;
+    background: url(../img/bg8.jpg);
+    color: white;
+    font-size: 40px;
+}
+
+.swiper-slide:nth-child(6) p{
+    margin-top:-80%;
+    letter-spacing: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
